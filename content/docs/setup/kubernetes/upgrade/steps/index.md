@@ -10,7 +10,8 @@ control plane and the sidecar proxies, to a new release of Istio. The upgrade
 process may install new binaries and may change configuration and API schemas.
 The upgrade process may result in service downtime. To minimize downtime,
 please ensure your Istio control plane components and your applications are
-highly available with multiple replicas.
+highly available with multiple replicas (as multi-replica Citadel is still
+under development, Citadel should be deployed with one replica).
 
 This flow assumes that the Istio components are installed and upgraded in the
 `istio-system` namespace.
@@ -70,8 +71,6 @@ including configurations generated using
     $ helm template install/kubernetes/helm/istio --name istio --namespace istio-system \
       --set global.mtls.enabled=true --set global.controlPlaneSecurityEnabled=true > $HOME/istio-auth.yaml
     {{< /text >}}
-
-    If using Kubernetes versions prior to 1.9, you should add `--set sidecarInjectorWebhook.enabled=false`.
 
 1. Upgrade the Istio control plane components via the manifest, for example:
 
