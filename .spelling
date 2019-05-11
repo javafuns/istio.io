@@ -234,6 +234,7 @@ initializer
 Initializers
 initializers
 injector
+InkScape
 int64
 interdependencies
 Interdependencies
@@ -356,6 +357,7 @@ peek
 pem
 PKI
 PKIs
+plaintext
 platform-specific
 pluggability
 pluggable

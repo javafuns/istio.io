@@ -1,7 +1,7 @@
 ---
 title: Creating and Editing Pages
 description: Explains the mechanics of creating and maintaining documentation pages.
-weight: 30
+weight: 10
 aliases:
     - /docs/welcome/contribute/writing-a-new-topic.html
     - /docs/reference/contribute/writing-a-new-topic.html
@@ -657,12 +657,12 @@ title: Frequently Asked Questions
 description: Questions Asked Frequently.
 weight: 12
 aliases:
-    - /faq
+    - /help/faq
 ---
 {{< /text >}}
 
-With the above in a page saved as `help/faq.md`, the user will be able to access the page by going
-to `istio.io/help/faq/` as normal, as well as `istio.io/faq/`.
+With the above in a page saved as `faq/_index.md`, the user will be able to access the page by going
+to `istio.io/faq/` as normal, as well as `istio.io/help/faq/`.
 
 You can also add many redirects like so:
 

@@ -5,6 +5,7 @@ weight: 10
 aliases:
     - /docs/samples/bookinfo.html
     - /docs/guides/bookinfo/index.html
+    - /docs/guides/bookinfo.html
 ---
 
 This example deploys a sample application composed of four separate microservices used
@@ -175,6 +176,7 @@ is used for this purpose.
 
     {{< text bash >}}
     $ docker-compose -f @samples/bookinfo/platform/consul/bookinfo.yaml@ up -d
+    $ docker-compose -f samples/bookinfo/platform/consul/bookinfo.sidecars.yaml up -d
     {{< /text >}}
 
 1.  Confirm that all docker containers are running:
